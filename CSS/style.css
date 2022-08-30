@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+.page{
+  width: 420px;
+  background-color: #C4C4C4;
+}
+
+header img{
+  width: 340px;
+  height: 140px;
+  border: 1px solid #000000;
+  border-radius: 36px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #000000;
+  
+}
