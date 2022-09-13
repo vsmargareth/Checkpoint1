@@ -61,3 +61,36 @@ nav a{
   text-decoration: none;
   width: 19.7rem;
 }
+
+main{
+  text-align: center;
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin-bottom: 9.5rem;
+ 
+}
+
+main h4{
+  font-size: 3.6rem;
+  color: #000000;
+}
+
+main h5{
+  font-size: 3rem;
+  color: #424242;
+}
+
+.main-wrapper{
+  display: flex ;
+  flex-direction: column;
+  gap: 4.7rem;
+  align-items: center;
+}
+
+.main-wrapper img,iframe{
+  max-width: 38rem;
+  max-height: 35rem;
+  border-radius: 3.1rem;
+}
