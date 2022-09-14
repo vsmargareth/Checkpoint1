@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins&family=Roboto&display=swap');
+
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   
 }
 
@@ -14,17 +16,17 @@
 .page{
   min-width: 420px;
   width: 100%;
-  background-color: #C4C4C4;
+  background-color: #efeccd;
   font-size: 1.6rem;
 }
 
 header{
   background-image: url(/assets/parnaiba-pi.png) ;
   background-size: cover;
+  /* display: flex; */
   
 
 }
-
 
 header img{
   width: 8.5rem;
@@ -39,6 +41,7 @@ header h1{
   font-size: 4.8rem;
   text-align: center;
   margin: 2rem 0rem 3.6rem;
+  font-family: 'poppins';
 }
 
 nav{
@@ -46,11 +49,10 @@ nav{
   flex-direction: column;
   align-items: center;
   
-  
 }
 
 nav a{
-     /* coloquei display flex para centralizar os nomes  dentro do box*/
+ /* coloquei display flex para centralizar os nomes  dentro do box*/
   align-items: center;
   background-color:  #C5DEEF;
   border-radius: 36px;
@@ -62,6 +64,14 @@ nav a{
   margin-bottom: 2.4rem;
   text-decoration: none;
   width: 19.7rem;
+}
+nav a:hover{
+  color: #e0c374;
+  
+}
+
+.banner{
+  display: none;
 }
 
 main{
@@ -91,23 +101,114 @@ main h5{
   align-items: center;
 }
 
-.main-wrapper img,iframe{
-  max-width: 38rem;
+.main-wrapper img{
+  width: 100%;
   max-height: 35rem;
-  border-radius: 3.1rem;
+  /* border-radius: 3.1rem; */
+}
+.video-wrapper iframe{
+  width: 100%;
+  max-height: 57.5rem;
+  padding: 4rem;
 }
 
-  footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 3rem;
-    padding: 2rem;
-  }
+.main-card {
+  max-width: 38rem;
+  gap: 1.5rem;
+  
+  display: flex;
+  border-radius: 3.1rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFF;
+}
+
+.main-card p{
+  padding: 2rem;
+}
+button{
+  border: none;
+  background-color: #F6D665;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+}
+button:hover{
+  scale: 1.1;
+  background-color: #f9f51c;
+}
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #dfda9d;
+}
 
   footer h5{
     font-size: 3.7rem;
   }
 
-  
+  @media (min-width: 900px) {
+    .banner{
+      display: flex;
+      width: 100%;
+
+    }
+    .banner img{
+      width: 100%;
+    }
+    header{
+      justify-content: space-between;
+
+    }
+
+    .header-left{
+      display: flex;
+      flex-direction: row;
+    }
+
+    nav{
+      flex-direction: row;
+      justify-content: end;
+      align-items: flex-end;
+      
+    }
+
+    nav a{
+      border: none;
+      background-color:  #c5deef00;
+      width: 12.7rem;
+      font-weight: 700;
+      font-size: 2.6rem;
+    
+    }
+    header h1{
+      text-align: start;
+      text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+      padding-left: 2rem;
+    }
+
+    
+    .main-wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+
+    .footer-link{
+      display: flex;
+      flex-direction: row;
+      gap: 10rem;
+      
+    }
+    .footer-reference{
+      display: flex;
+     gap: 10rem;
+    }
+
+  }
