@@ -204,8 +204,18 @@ footer{
       display: flex;
       flex-direction: row;
       gap: 10rem;
-      
     }
+
+      .footer-link a{
+        text-decoration: none;
+        color: #000000;
+      }
+
+      .footer-link a:hover{
+        text-decoration: underline;
+        color: #a08b51;
+      }
+
     .footer-reference{
       display: flex;
      gap: 10rem;
